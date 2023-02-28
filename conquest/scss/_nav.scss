@@ -1,0 +1,257 @@
+// nav start
+.nav-row {
+    padding: 30px 0 10px 0;
+    color: #555248;
+}
+
+.nav-logo--title {
+    font-family: 'Playfair Display';
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.nav-menu_list {
+    column-gap: 65px;
+}
+
+.nav-menu--link {
+    color: #555248;
+
+    &:focus, &:hover, &.active {
+        color: #327684;
+    } 
+}
+
+.nav-options {
+    column-gap: 23px;
+}
+
+.search-box {
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    z-index: 10;
+
+    & svg {
+        position: relative;
+        z-index: 2;
+    }
+
+    & .search-label {
+        position: absolute;
+        border: 1px solid ;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -10px;
+        width: 200px;
+        height: 28px;
+        z-index: 1;
+        border-radius: 15px;
+        padding-left: 10px;
+        padding-top: 5px;
+        background: #FDFDFB;
+        display: none;
+
+    }
+        
+    &:focus .search-label, &:hover .search-label, &.active .search-label {
+        display: block;
+    }
+
+        
+
+}
+
+.favorites-box {
+    position: relative;
+
+    & .counter-box {
+        position: absolute;
+        top: -5px;
+        right: -8px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #eed9c8;
+
+        font-size: 9px;
+        line-height: 1.125;
+        color: #1B1A17;
+    }
+}
+
+// nav mobail start
+.menu-burger {
+    position: relative;
+    width: 30px;
+    height: 22px;
+    display: none;
+
+    &:before,
+    &:after,
+    & span {
+        position: absolute;
+        content: '';
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #555248;
+        border-radius: 1px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &:before {
+        top: 0;
+    }
+
+    &:after {
+        bottom: 0;
+    }
+
+    & span {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &.active::before {
+        transform: rotate(45deg);
+        top: 10px;
+    }
+
+    &.active::after {
+        transform: rotate(-45deg);
+        bottom: 10px;
+    }
+
+    &.active span {
+        transform: scale(0);
+    }
+}
+
+.nav-menu--mobail {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu, .favorites-box, .cart-box {
+        display: none;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+
+    .favorites-box.mobail, .cart-box.mobail {
+        display: flex;
+    }
+
+    .nav.nav-mobail {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 50px;
+        padding: 0 15px;
+        z-index: 30;
+    
+        &:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #FDFDFB;
+            z-index: 5;
+        }
+
+        & .nav-row {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            padding: 0 15px;
+            z-index: 6;
+        }
+
+        & .nav-menu--mobail { 
+            display: block;  
+            position: absolute;
+            top: 50px;
+            right: -100%;
+            width: 100%;
+            min-height: 100vh;
+            padding: 20px 15px 0;
+            z-index: 4;
+            font-size: 16px;
+            background: #FDFDFB;
+            overflow-x: scroll;
+            border-top: 1px solid #327684;
+            transition: all 0.5s ease;
+
+            &.active {
+                right: 0;
+            }
+        }
+    }
+
+    .nav-menu--mobail_block {
+        padding-bottom: 10px;
+        margin-top: 40px;
+        column-gap: 10px;
+        border-bottom: 1px solid #327684;
+        position: relative;
+
+        & .menu--mobail_box {
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            display: none;
+            transition: display 0.4s ease; 
+
+            &.block {
+                display: block;
+            }
+        }
+    }
+
+    .menu--mobail_section {
+        height: 76px;
+        min-width: 70px;
+        padding: 3px;
+        border-radius: 10px;
+        justify-content: space-between;
+        transition: box-shadow 0.4s ease;
+
+        &.emphasis {           
+            box-shadow: 0 0 3px 2px #bdb5ad;
+        }
+
+        & h3 {
+            font-family: 'Roboto';
+            font-size: 13px;
+            letter-spacing: 0.01em;
+            text-align: center;
+        } 
+    }
+
+    .mobail_box--list {
+        padding-top: 20px;
+        padding-bottom: 100px;
+        row-gap: 20px;
+    }
+
+    .nav-mobail--link {
+        color: #555248;
+
+        &:focus, &:hover, &.active {
+            color: #327684;
+        } 
+    }
+
+}

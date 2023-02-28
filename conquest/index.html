@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
+        <title>Document</title>
+    </head>
+    <body class="body">
+        <div class="site-container">
+
+            <!-- nav start --> 
+            <nav class="nav -mobail none">
+                <div class="container">
+                    <section class="nav-row  flex--space-between--center">
+                        <article class="logo flex--center--center">
+                            <img src="./img/logo/header-logo.svg" alt="Логотип" />
+                            <div class="nav-logo--title">Conquest</div>
+                        </article>
+
+                        <article class="nav-menu">      
+                            <ul class="nav-menu_list flex--center--center">
+                                <li><a href="#!" class="nav-menu--link">Каталог</a></li>
+                                <li><a href="#!" class="nav-menu--link">Акции</a></li>
+                                <li><a href="#!" class="nav-menu--link">Доставка</a></li>
+                                <li><a href="#!" class="nav-menu--link">Контакты</a></li>
+                            </ul>    
+                        </article>
+ 
+                        <article class="nav-options flex--center--center">
+
+                            <div class="search-box" tabindex="0">
+                                <label for="search" class="search-label">
+                                    <input type="search" name="search" id="search" placeholder="Поиск по сайту"/>
+                                </label>
+                                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8041 14.8638L11.9576 11.0172C12.911 9.85475 13.4857 8.36576 13.4857 6.74289C13.4857 3.02042 10.4653 0 6.74286 0C3.01714 0 0 3.02042 0 6.74289C0 10.4654 3.01714 13.4858 6.74286 13.4858C8.36571 13.4858 9.85143 12.9144 11.0139 11.9609L14.8604 15.8042C15.1216 16.0654 15.5429 16.0654 15.8041 15.8042C16.0653 15.5462 16.0653 15.1217 15.8041 14.8638ZM6.74286 12.1437C3.76163 12.1437 1.33878 9.72087 1.33878 6.74289C1.33878 3.76492 3.76163 1.33878 6.74286 1.33878C9.72082 1.33878 12.1469 3.76492 12.1469 6.74289C12.1469 9.72087 9.72082 12.1437 6.74286 12.1437Z" />
+                                </svg> 
+                            </div>
+
+                            <a href="#!" class="favorites-box nav-menu--link" tabindex="1">
+                                <svg width="23.75" height="20" viewBox="0 0 21 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.9686 5.77107C19.6912 3.00626 17.5306 1.00033 14.8266 1.00033C13.0251 1.00033 11.3757 1.87836 10.4475 3.28559C9.5278 1.86016 7.94595 1 6.17336 1C3.4697 1 1.30868 3.00593 1.0317 5.77074C1.00978 5.89286 0.919889 6.53558 1.19321 7.58372C1.58712 9.09552 2.49699 10.4706 3.82378 11.5595L10.4431 17.0001L17.1761 11.5598C18.5029 10.4706 19.4128 9.09586 19.8067 7.58372C20.08 6.53591 19.9902 5.89319 19.9686 5.77107ZM19.0953 7.43214C18.7357 8.81289 17.9022 10.0709 16.6872 11.0677L10.4475 16.1098L4.31489 11.069C3.09772 10.0702 2.26459 8.81256 1.90466 7.43181C1.64595 6.43993 1.75229 5.87962 1.75265 5.87598L1.75813 5.84255C1.99565 3.42028 3.85229 1.66191 6.17336 1.66191C7.88602 1.66191 9.39369 2.61507 10.1092 4.14905L10.4457 4.87153L10.7822 4.14905C11.4864 2.63857 13.0737 1.66224 14.8269 1.66224C17.1476 1.66224 19.0047 3.42062 19.2469 5.87433C19.2476 5.87962 19.354 6.44026 19.0953 7.43214Z" stroke="currentColor" stroke-width="0.75"/>
+                                </svg>
+                                <div class="counter-box flex--center--center">
+                                    <span class="favorites-count">1</span>
+                                </div>
+                            </a>
+
+                            <a href="#!" class="cart-box nav-menu--link counter" tabindex="2">
+                                <svg width="24.75" height="22" viewBox="0 0 18 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.8961 3.05166C17.7931 2.91219 17.6273 2.82598 17.4472 2.81871L6.28162 2.36415C5.96126 2.35091 5.69355 2.58451 5.67986 2.88567C5.66624 3.18672 5.91317 3.44109 6.232 3.45403L16.6416 3.87785L14.5949 9.90927H5.48658L3.84103 1.44689C3.80486 1.26142 3.67004 1.10669 3.4841 1.03779L0.788965 0.037775C0.491928 -0.072061 0.156743 0.065738 0.0400874 0.345939C-0.0763672 0.626293 0.0694931 0.943056 0.36637 1.05323L2.76277 1.94238L4.43736 10.5533C4.48784 10.8122 4.72671 11.0002 5.0055 11.0002H5.28328L4.64896 12.6643C4.59587 12.8037 4.61775 12.9585 4.7081 13.0796C4.79833 13.2007 4.94508 13.2728 5.10173 13.2728H5.54664C5.27095 13.5625 5.10173 13.9441 5.10173 14.3637C5.10173 15.266 5.87913 16.0001 6.83433 16.0001C7.78953 16.0001 8.56693 15.266 8.56693 14.3637C8.56693 13.9441 8.39771 13.5625 8.12206 13.2728H11.8996C11.6237 13.5625 11.4546 13.9441 11.4546 14.3637C11.4546 15.266 12.2318 16.0001 13.1872 16.0001C14.1426 16.0001 14.9198 15.266 14.9198 14.3637C14.9198 13.9441 14.7506 13.5625 14.475 13.2728H15.016C15.2819 13.2728 15.4973 13.0693 15.4973 12.8182C15.4973 12.5671 15.2819 12.3637 15.016 12.3637H5.78652L6.30624 11H15.016C15.2672 11 15.4894 10.8468 15.5659 10.6211L17.9723 3.53C18.0275 3.36816 17.9992 3.19121 17.8961 3.05166ZM6.83437 15.0912C6.40968 15.0912 6.0643 14.765 6.0643 14.3639C6.0643 13.9628 6.40968 13.6366 6.83437 13.6366C7.25906 13.6366 7.6044 13.9628 7.6044 14.3639C7.6044 14.765 7.25906 15.0912 6.83437 15.0912ZM13.1872 15.0912C12.7625 15.0912 12.4171 14.765 12.4171 14.3639C12.4171 13.9628 12.7625 13.6366 13.1872 13.6366C13.6119 13.6366 13.9572 13.9628 13.9572 14.3639C13.9572 14.765 13.6119 15.0912 13.1872 15.0912Z"/>
+                                </svg>
+                            </a>
+
+
+                            <div class="menu-burger">
+                                <span></span>
+                            </div>
+
+                        </article>
+                    </section>
+
+                    <!-- nav-mobail start -->
+                    <section class="nav-menu--mobail flex--direction--start">
+
+                        <article class="nav-options flex--center--center">
+                            <a href="#!" class="account-box nav-mobail--link">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 9.4905C19 4.25125 14.744 0 9.5 0C4.256 0 0 4.25125 0 9.4905C0 12.3761 1.311 14.9767 3.363 16.7224C3.382 16.7414 3.401 16.7414 3.401 16.7604C3.572 16.8934 3.743 17.0264 3.933 17.1594C4.028 17.2164 4.104 17.2912 4.199 17.3672C5.76896 18.4316 7.62222 19.0004 9.519 19C11.4158 19.0004 13.269 18.4316 14.839 17.3672C14.934 17.3102 15.01 17.2354 15.105 17.1772C15.276 17.0454 15.466 16.9124 15.637 16.7794C15.656 16.7604 15.675 16.7604 15.675 16.7414C17.689 14.9756 19 12.3761 19 9.4905ZM9.5 17.8042C7.714 17.8042 6.08 17.2342 4.731 16.2854C4.75 16.1334 4.788 15.9826 4.826 15.8306C4.93921 15.4186 5.10526 15.0231 5.32 14.6538C5.529 14.2928 5.776 13.9698 6.08 13.6848C6.365 13.3998 6.707 13.1349 7.049 12.9259C7.41 12.7169 7.79 12.5649 8.208 12.4509C8.62925 12.3374 9.06372 12.2803 9.5 12.2811C10.7951 12.272 12.0427 12.7688 12.977 13.6658C13.414 14.1028 13.756 14.6158 14.003 15.2036C14.136 15.5456 14.231 15.9066 14.288 16.2854C12.8858 17.2712 11.2141 17.8015 9.5 17.8042ZM6.593 9.01669C6.42559 8.63339 6.3414 8.21893 6.346 7.80069C6.346 7.38387 6.422 6.96587 6.593 6.58588C6.764 6.20588 6.992 5.86506 7.277 5.58006C7.562 5.29506 7.904 5.06825 8.284 4.89725C8.664 4.72625 9.082 4.65025 9.5 4.65025C9.937 4.65025 10.336 4.72625 10.716 4.89725C11.096 5.06825 11.438 5.29625 11.723 5.58006C12.008 5.86506 12.236 6.20706 12.407 6.58588C12.578 6.96587 12.654 7.38387 12.654 7.80069C12.654 8.23769 12.578 8.63669 12.407 9.0155C12.242 9.38988 12.0102 9.7311 11.723 10.0225C11.4315 10.3093 11.0903 10.5406 10.716 10.7053C9.93086 11.028 9.05014 11.028 8.265 10.7053C7.89071 10.5406 7.5495 10.3093 7.258 10.0225C6.9704 9.73535 6.74416 9.39394 6.593 9.01669ZM15.409 15.3176C15.409 15.2796 15.39 15.2606 15.39 15.2226C15.2031 14.6281 14.9277 14.0653 14.573 13.5529C14.218 13.0368 13.7816 12.5817 13.281 12.2051C12.8987 11.9175 12.4842 11.6752 12.046 11.4831C12.2454 11.3516 12.4301 11.1991 12.597 11.0283C12.8803 10.7487 13.129 10.4361 13.338 10.0973C13.7588 9.40596 13.9761 8.60996 13.965 7.80069C13.9709 7.20161 13.8545 6.60763 13.623 6.05506C13.3944 5.52263 13.0654 5.03922 12.654 4.63125C12.2432 4.22754 11.7597 3.9052 11.229 3.68125C10.6755 3.45015 10.0808 3.33419 9.481 3.34044C8.88116 3.33457 8.2864 3.45094 7.733 3.68244C7.19774 3.90591 6.71307 4.23508 6.308 4.65025C5.9043 5.06063 5.58196 5.54375 5.358 6.07406C5.1265 6.62663 5.01012 7.22061 5.016 7.81969C5.016 8.23769 5.073 8.63669 5.187 9.0155C5.301 9.4145 5.453 9.7755 5.662 10.1163C5.852 10.4583 6.118 10.7623 6.403 11.0473C6.574 11.2183 6.764 11.3691 6.973 11.5021C6.53343 11.6993 6.11885 11.9481 5.738 12.2431C5.244 12.6231 4.807 13.0779 4.446 13.5719C4.08768 14.0821 3.81197 14.6456 3.629 15.2416C3.61 15.2796 3.61 15.3176 3.61 15.3366C2.109 13.8177 1.178 11.7681 1.178 9.4905C1.178 4.91625 4.921 1.17681 9.5 1.17681C14.079 1.17681 17.822 4.91625 17.822 9.4905C17.8195 11.6754 16.9519 13.7705 15.409 15.3176Z" />
+                                </svg>
+                            </a>
+                            
+                            <a href="#!" class="cart-box mobail nav-mobail--link counter">
+                                <svg width="24.75" height="22" viewBox="0 0 18 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.8961 3.05166C17.7931 2.91219 17.6273 2.82598 17.4472 2.81871L6.28162 2.36415C5.96126 2.35091 5.69355 2.58451 5.67986 2.88567C5.66624 3.18672 5.91317 3.44109 6.232 3.45403L16.6416 3.87785L14.5949 9.90927H5.48658L3.84103 1.44689C3.80486 1.26142 3.67004 1.10669 3.4841 1.03779L0.788965 0.037775C0.491928 -0.072061 0.156743 0.065738 0.0400874 0.345939C-0.0763672 0.626293 0.0694931 0.943056 0.36637 1.05323L2.76277 1.94238L4.43736 10.5533C4.48784 10.8122 4.72671 11.0002 5.0055 11.0002H5.28328L4.64896 12.6643C4.59587 12.8037 4.61775 12.9585 4.7081 13.0796C4.79833 13.2007 4.94508 13.2728 5.10173 13.2728H5.54664C5.27095 13.5625 5.10173 13.9441 5.10173 14.3637C5.10173 15.266 5.87913 16.0001 6.83433 16.0001C7.78953 16.0001 8.56693 15.266 8.56693 14.3637C8.56693 13.9441 8.39771 13.5625 8.12206 13.2728H11.8996C11.6237 13.5625 11.4546 13.9441 11.4546 14.3637C11.4546 15.266 12.2318 16.0001 13.1872 16.0001C14.1426 16.0001 14.9198 15.266 14.9198 14.3637C14.9198 13.9441 14.7506 13.5625 14.475 13.2728H15.016C15.2819 13.2728 15.4973 13.0693 15.4973 12.8182C15.4973 12.5671 15.2819 12.3637 15.016 12.3637H5.78652L6.30624 11H15.016C15.2672 11 15.4894 10.8468 15.5659 10.6211L17.9723 3.53C18.0275 3.36816 17.9992 3.19121 17.8961 3.05166ZM6.83437 15.0912C6.40968 15.0912 6.0643 14.765 6.0643 14.3639C6.0643 13.9628 6.40968 13.6366 6.83437 13.6366C7.25906 13.6366 7.6044 13.9628 7.6044 14.3639C7.6044 14.765 7.25906 15.0912 6.83437 15.0912ZM13.1872 15.0912C12.7625 15.0912 12.4171 14.765 12.4171 14.3639C12.4171 13.9628 12.7625 13.6366 13.1872 13.6366C13.6119 13.6366 13.9572 13.9628 13.9572 14.3639C13.9572 14.765 13.6119 15.0912 13.1872 15.0912Z"/>
+                                </svg>
+                            </a>
+
+                            <a href="#!" class="favorites-box mobail nav-mobail--link">
+                                <svg width="23.75" height="20" viewBox="0 0 21 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.9686 5.77107C19.6912 3.00626 17.5306 1.00033 14.8266 1.00033C13.0251 1.00033 11.3757 1.87836 10.4475 3.28559C9.5278 1.86016 7.94595 1 6.17336 1C3.4697 1 1.30868 3.00593 1.0317 5.77074C1.00978 5.89286 0.919889 6.53558 1.19321 7.58372C1.58712 9.09552 2.49699 10.4706 3.82378 11.5595L10.4431 17.0001L17.1761 11.5598C18.5029 10.4706 19.4128 9.09586 19.8067 7.58372C20.08 6.53591 19.9902 5.89319 19.9686 5.77107ZM19.0953 7.43214C18.7357 8.81289 17.9022 10.0709 16.6872 11.0677L10.4475 16.1098L4.31489 11.069C3.09772 10.0702 2.26459 8.81256 1.90466 7.43181C1.64595 6.43993 1.75229 5.87962 1.75265 5.87598L1.75813 5.84255C1.99565 3.42028 3.85229 1.66191 6.17336 1.66191C7.88602 1.66191 9.39369 2.61507 10.1092 4.14905L10.4457 4.87153L10.7822 4.14905C11.4864 2.63857 13.0737 1.66224 14.8269 1.66224C17.1476 1.66224 19.0047 3.42062 19.2469 5.87433C19.2476 5.87962 19.354 6.44026 19.0953 7.43214Z" stroke="currentColor" stroke-width="0.75"/>
+                                </svg>
+                                <div class="counter-box flex--center--center">
+                                    <span class="favorites-count">1</span>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="nav-menu--mobail_block  flex--space-between--center">
+                            <section class="menu--mobail_section emphasis flex--direction--center">
+                                <h3>Разделы<br> сайта</h3>
+                                <img src="./img/menu-mobail/site-menu.svg" alt="иконка меню">
+                                <div class="menu--mobail_box block">
+                                    <ul class="mobail_box--list flex--direction--center">
+                                        <li><a href="#!" class="nav-mobail--link">Каталог</a></li>
+                                        <li><a href="#!" class="nav-mobail--link">Акции</a></li>
+                                        <li><a href="#!" class="nav-mobail--link">Доставка</a></li>
+                                        <li><a href="#!" class="nav-mobail--link">Контакты</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <section class="menu--mobail_section  flex--direction--center">
+                                <h3>О нас</h3>
+                                <img src="./img/menu-mobail/about-company.svg" alt="иконка здания">
+                                <div class="menu--mobail_box">
+                                    <ul class="mobail_box--list flex--direction--center">
+                                        <li><a href="#!" class="nav-mobail--link">Наши магазины</a></li>
+                                        <li><a href="#!" class="nav-mobail--link">Вакансии</a></li>
+                                        <li><a href="#!" class="nav-mobail--link">Сертификаты</a></li>
+                                        <li><a href="#!" class="nav-mobail--link">Отзывы</a></li>
+                                        <li><a href="#!" class="nav-mobail--link">8 (499) 450-47-97</a></li>
+                                        <li><a href="#!" class="nav-mobail--link">info@conquest.watch.ru</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <section class="menu--mobail_section  flex--direction--center">
+                                <h3>Клиентам</h3>
+                                <img src="./img/menu-mobail/buyers.svg" alt="иконка человека">
+                                <div class="menu--mobail_box">
+                                    <ul class="mobail_box--list flex--direction--center">
+                                        <li><a href="#!" class="nav-mobail--link">Каталог товаров</a></li>
+                                        <li><a href="#!" class="nav-mobail--link">Как заказать?</a></li>
+                                        <li><a href="#!" class="nav-mobail--link">FAQ</a></li>
+                                        <li><a href="#!" class="nav-mobail--link">Корпоративным клиентам</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                            
+                            <section class="menu--mobail_section  flex--direction--center">
+                                <h3>Оплата и<br> доставка</h3>
+                                <img src="./img/menu-mobail/payment-delivery.svg" alt="иконка платёжной карты">
+                                <div class="menu--mobail_box">
+                                    <ul class="mobail_box--list flex--direction--center">
+                                        <li><a href="#!" class="nav-mobail--link">Способы оплаты</a></li>
+                                        <li><a href="#!" class="nav-mobail--link">Время доставки</a></li>
+                                        <li><a href="#!" class="nav-mobail--link">Гарантии и ремонт</a></li>
+                                        <li><a href="#!" class="nav-mobail--link">Возврат и компенсация</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </article>
+
+                    </section>
+                    <!-- nav-mobail end -->
+                </div>
+            </nav>
+            <!-- nav end -->
+
+            <!-- header start -->
+            <header class="header ">
+                <div class="container">
+                    <section class="header-content flex--space-between--center">
+
+                        <article class="header-info">
+                            <h1 class="header-title decor-line_left">Весна/Лето 2019</h1>
+                            <h2 class="section-title">Коллекция</h2>
+                            <p>Швейцарские часы в наличии в Москве и с доставкой по всему миру</p>
+                            <a href="#!" class="block-link" tabindex="3">Смотреть каталог</a>
+                        </article>
+ 
+                        <article class="header-image">
+                            <div class="block-cost">
+                                <p class="decor-line_right">22 000<span>&#8381;</span></p>
+                            </div>
+                            <img src="./img/header/header-image.png" alt="Наручные часы">
+                            <img class="bg-image" src="./img/header/header-image-decor.svg" alt="">
+                            <div class="block-size">
+                                <p class="decor-line_left">28 мм диаметр</p>
+                            </div>     
+                        </article> 
+
+                    </section>
+                </div>
+            </header>
+            <!-- header end -->
+
+            <main class="main">
+
+                <!-- popular-models start -->
+                <section class="popular-models section ">
+                    <div class="container">
+                        <h2 class="section-title">Популярные модели</h2>
+                        <div class="link-box flex--end--center"><a href="#!" tabindex="4">Смотреть все</a></div>
+                        <article class="popular-models_wrapper flex--center--center">
+
+                            <section class="model-item">
+                                <h3 class="model-name--title">RADO</h3>
+                                <p class="model-cost--title">65 300<span>&#8381;</span></p>
+                                <div class="model-image">
+                                    <img src="./img/popular-models/rado.png" alt="Наручные часы">
+                                </div>
+                                <a href="#!" class="model-link decor-line_link" tabindex="5">Подробнее</a>
+                            </section>
+
+                            <section class="model-item">
+                                <h3 class="model-name--title">BVLGARI</h3>
+                                <p class="model-cost--title">81 700<span>&#8381;</span></p>
+                                <div class="model-image">
+                                    <img src="./img/popular-models/bvlgari-brown.png" alt="Наручные часы">
+                                </div>
+                                <a href="#!" class="model-link decor-line_link" tabindex="6">Подробнее</a>
+                            </section>
+
+                            <section class="model-item">
+                                <h3 class="model-name--title">BVLGARI</h3>
+                                <p class="model-cost--title">72 700<span>&#8381;</span></p>
+                                <div class="model-image">
+                                    <img src="./img/popular-models/bvlgari-black.png" alt="Наручные часы">
+                                </div>
+                                <a href="#!" class="model-link decor-line_link" tabindex="7">Подробнее</a>
+                            </section>
+
+                        </article>  
+                    </div>
+                </section>
+                <!-- popular-models end -->
+
+                <!-- quality start -->
+                <section class="quality ">
+                    <div class="container">
+                        <article class="quality-wrapper flex--center--center">
+
+                            <section class="quality-slider">
+                                <div class="slider">
+                                    <img src="./img/quality/image-1.jpg" class="slider-item" alt="Наручные часы">
+                                    <img src="./img/quality/image-2.jpg" class="slider-item" alt="Наручные часы">
+                                    <img src="./img/quality/image-3.jpg" class="slider-item" alt="Наручные часы">
+                                    <img src="./img/quality/image-4.jpg" class="slider-item" alt="Наручные часы">
+                                    <img src="./img/quality/image-5.jpg" class="slider-item" alt="Наручные часы">
+                                    <img src="./img/quality/image-6.jpg" class="slider-item" alt="Наручные часы">
+                                    <img src="./img/quality/image-7.jpg" class="slider-item" alt="Наручные часы">
+                                    <img src="./img/quality/image-8.jpg" class="slider-item" alt="Наручные часы">
+                                    <img src="./img/quality/image-9.jpg" class="slider-item" alt="Наручные часы">
+                                    <img src="./img/quality/image-10.jpg" class="slider-item" alt="Наручные часы">
+                                    <img src="./img/quality/image-11.jpg" class="slider-item" alt="Наручные часы">
+                                </div>
+
+                                <img src="./img/quality/slider-bg.svg" alt="" class="slider-bg">
+
+                                <div class="block-buttons flex--center--center">
+                                    <div class="button-box flex--center--center" id="btn-prev" tabindex="8">
+                                        <img src="./img/interactive-icons/arrow_left.svg" alt="Стрелка влево">
+                                    </div>
+                                    <div class="slider-counter--box flex--center--center">
+                                        <span class="slider-counter">01</span>
+                                    </div>
+                                    <div class="button-box flex--center--center" id="btn-next" tabindex="9">
+                                        <img src="./img/interactive-icons/arrow_right.svg" alt="Стрелка вправо">
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="quality-info flex--direction--start">
+                                <h2 class="section-title">Подлинное качество</h2>
+                                <p>
+                                    Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.
+                                </p>
+                                <a href="#!" class="block-link" tabindex="10">Смотреть каталог</a>
+                            </section>
+
+                        </article>
+                    </div>
+                </section>
+                <!-- quality end -->
+
+                <!-- news start -->
+                <section class="news section ">
+                    <div class="container">
+                        <article class="news-wrapper flex--space-between--center">
+
+                            <section class="news-info flex--direction--start">
+                                <h2 class="section-title">Следите за нашими новостями</h2>
+                                <p>
+                                    Подписывайтесь на <a href="#!" class="email-link" tabindex="10">@conquest_watch</a> в соцсетях и узнавайте о новинках и акциях первыми.
+                                </p>
+                                <div class="soc-links_box">
+                                    <ul class="soc-links flex--start--center">
+                                        <li><a href="#!" class="soc-link" tabindex="11">
+                                            <svg width="23" height="24" viewBox="0 0 23 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.6571 0.67334C2.98565 0.67334 0 3.63873 0 7.28325V16.8407C0 20.4852 2.98565 23.449 6.6571 23.449H16.3429C20.0143 23.449 23 20.4852 23 16.8407V7.28325C23 3.63873 20.0143 0.67334 16.3429 0.67334H6.6571ZM6.6571 2.6313H16.3429C18.9559 2.6313 21.0292 4.68941 21.0292 7.28325V16.8407C21.0292 19.4345 18.9559 21.491 16.3429 21.491H6.6571C4.04408 21.491 1.97241 19.4345 1.97241 16.8407V7.28325C1.97241 4.68941 4.04408 2.6313 6.6571 2.6313ZM17.6727 4.58924C16.9107 4.58924 16.2934 5.20201 16.2934 5.95832C16.2934 6.71466 16.9107 7.32741 17.6727 7.32741C18.4346 7.32741 19.0519 6.71466 19.0519 5.95832C19.0519 5.20201 18.4346 4.58924 17.6727 4.58924ZM11.5 6.19713C8.24893 6.19713 5.59264 8.83395 5.59264 12.0612C5.59264 15.2884 8.24893 17.9252 11.5 17.9252C14.7511 17.9252 17.409 15.2884 17.409 12.0612C17.409 8.83395 14.7511 6.19713 11.5 6.19713ZM11.5 8.15509C13.6853 8.15509 15.4366 9.89192 15.4366 12.0612C15.4366 14.2304 13.6853 15.9672 11.5 15.9672C9.31472 15.9672 7.56504 14.2304 7.56504 12.0612C7.56504 9.89192 9.31472 8.15509 11.5 8.15509Z" />
+                                            </svg>
+                                        </a></li>
+                                        <li><a href="#!" class="soc-link" tabindex="12">
+                                            <svg width="12" height="22" viewBox="0 0 12 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.83169 0.571289C5.69558 0.571289 3.54784 2.30036 3.54784 5.47684V8.21442H0V11.9271H3.54784V21.449H7.78878V11.9271H11.3267L11.8581 8.21442H7.78878V5.84364C7.78878 4.76904 8.11969 4.0365 9.8251 4.0365H12V0.717411C11.6238 0.672179 10.3339 0.571289 8.83169 0.571289Z"/>
+                                            </svg>
+                                        </a></li>
+                                        <li><a href="#!" class="soc-link" tabindex="13">
+                                            <svg width="22" height="18" viewBox="0 0 22 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22 2.38918C21.191 2.73222 20.321 2.96407 19.4081 3.06852C20.3398 2.5346 21.0552 1.68955 21.3922 0.682817C20.5202 1.17718 19.5546 1.53577 18.526 1.72905C17.7032 0.891167 16.5301 0.367432 15.232 0.367432C12.7393 0.367432 10.7189 2.298 10.7189 4.67956C10.7189 5.01766 10.7584 5.34689 10.8357 5.6623C7.0846 5.4827 3.75901 3.76541 1.53295 1.15673C1.14443 1.79333 0.921886 2.53398 0.921886 3.3244C0.921886 4.82069 1.71835 6.14036 2.92973 6.91397C2.18992 6.89187 1.49391 6.6978 0.885376 6.37458C0.88451 6.39275 0.884504 6.41067 0.884504 6.4287C0.884504 8.51842 2.44044 10.2609 4.50492 10.6573C4.12653 10.7559 3.7279 10.808 3.31624 10.808C3.02512 10.808 2.74286 10.7817 2.46681 10.7311C3.04153 12.4443 4.70801 13.6912 6.68333 13.7261C5.13742 14.8829 3.19166 15.5719 1.07697 15.5719C0.712916 15.5719 0.353368 15.5514 0 15.5118C1.99818 16.7353 4.37022 17.449 6.91929 17.449C15.2207 17.449 19.7597 10.8783 19.7597 5.17934C19.7597 4.99246 19.7552 4.80686 19.747 4.62193C20.6285 4.01345 21.3936 3.25416 21.999 2.38921" />
+                                            </svg>
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <section class="news-images flex--center--center">
+                                <div class="small-images flex--direction--center">
+                                    <img src="./img/news/photo_1.jpg" alt="Наручные часы">
+                                    <img src="./img/news/photo_2.jpg" alt="Наручные часы">
+                                </div>
+                                <div class=""><img src="./img/news/photo_3.jpg" alt="Наручные часы"></div>
+                            </section>
+
+                        </article>
+                    </div>
+                </section>
+                <!-- news end -->
+
+            </main>
+
+            <footer class="footer">
+                <div class="container">
+                    <section class="footer-wrapper flex--space-between--start">
+
+                        <article class="footer-item flex--direction--start">
+                            <div class="logo flex--center--center">
+                                <img src="./img/logo/footer-logo.svg" alt="Логотип" />
+                                <div class="footer-logo--title">Conquest</div>
+                            </div>
+                            <div class="footer-links-box">
+                                <ul class="footer-links flex--direction--start">
+                                    <li><a href="#!" class="footer-link">8 (499) 450-47-97</a></li>
+                                    <li><a href="#!" class="footer-link">info@conquest.watch.ru</a></li>
+                                </ul>
+                            </div>
+                        </article>
+                        
+                        <article class="footer-item flex--direction--start">
+                            <h3 class="footer-title">О компании</h3>
+                            <div class="footer-links-box">
+                                <ul class="footer-links flex--direction--start">
+                                    <li><a href="#!" class="footer-link">Наши магазины</a></li>
+                                    <li><a href="#!" class="footer-link">Вакансии</a></li>
+                                    <li><a href="#!" class="footer-link">Сертификаты</a></li>
+                                    <li><a href="#!" class="footer-link">Отзывы</a></li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="footer-item flex--direction--start">
+                            <h3 class="footer-title">Покупателям</h3>
+                            <div class="footer-links-box">
+                                <ul class="footer-links flex--direction--start">
+                                    <li><a href="#!" class="footer-link">Каталог товаров</a></li>
+                                    <li><a href="#!" class="footer-link">Как заказать?</a></li>
+                                    <li><a href="#!" class="footer-link">FAQ</a></li>
+                                    <li><a href="#!" class="footer-link">Корпоративным клиентам</a></li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="footer-item flex--direction--start">
+                            <h3 class="footer-title">Оплата и доставка</h3>
+                            <div class="footer-links-box">
+                                <ul class="footer-links flex--direction--start">
+                                    <li><a href="#!" class="footer-link">Способы оплаты</a></li>
+                                    <li><a href="#!" class="footer-link">Время доставки</a></li>
+                                    <li><a href="#!" class="footer-link">Гарантии и ремонт</a></li>
+                                    <li><a href="#!" class="footer-link">Возврат и компенсация</a></li>
+                                </ul>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>
